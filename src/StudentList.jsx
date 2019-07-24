@@ -6,7 +6,7 @@ export default class StudentList extends Component {
         let students = this.props.studentList;
         const trItem = students.map( (item,index) => <StudentItem key={index} student={item} index={index} editStudentSubmit={this.props.editStudentSubmit} deleteStudent={this.props.deleteStudent}/>)
       return (
-            <tbody>{trItem}</tbody>
+            <tbody color="white">{trItem}</tbody>
       );
     }
   }

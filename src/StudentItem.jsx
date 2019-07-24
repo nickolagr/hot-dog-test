@@ -33,7 +33,7 @@ this.props.deleteStudent(id);
       return (
         this.state.isEdit === true ? 
 
-        <tr className="bg-warning" key={this.props.index}><td><input ref={nameInput => this.nameInput = nameInput} defaultValue ={name}/></td><td><i className="far fa-save" onClick={this.editStudentSubmit}></i></td><td><i className="fas fa-trash"></i></td></tr>
+        <tr className="bg-warning" key={this.props.index}><td><input color="red" ref={nameInput => this.nameInput = nameInput} defaultValue ={name}/></td><td><i className="far fa-save" onClick={this.editStudentSubmit}></i></td><td><i className="fas fa-trash"></i></td></tr>
  :
         <tr key={this.props.index}><td>{name}</td><td><i className="far fa-edit" onClick={this.editStudent}></i></td><td><i className="fas fa-trash" onClick={this.deleteStudent}></i></td></tr>
       );

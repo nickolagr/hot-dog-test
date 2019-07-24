@@ -30,3 +30,29 @@
     transform: rotate(360deg);
   }
 }
+table{
+  background: url(http://www.pngmart.com/files/8/Hot-Dog-PNG-No-Background.png);
+  background-size: cover;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: soft-light;
+  opacity: 0.9;
+  color: black;
+}
+
+button{
+  background-color: #33EDB5;
+}
+th{
+  color: black;
+}
+#names{
+  color: black;
+}
+.card-header{
+  text-align: center;
+}
+input{
+  color: grey;
+}
