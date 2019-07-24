@@ -19,7 +19,8 @@ class App extends Component {
   }
   addNewStudent()
   {
-this.props.addStudent({id:Math.max(...this.props.studentList.map(function(o){return o.id})) + 1,name:'',grade:1,school:''});
+this.props.addStudent({id:Math.max(...this.props.studentList.map(function(o){return o.id})) + 1,name:''
+});
   }
 
   deleteStudent(id)
@@ -31,9 +32,9 @@ this.props.addStudent({id:Math.max(...this.props.studentList.map(function(o){ret
    
   }
   }
-  editStudentSubmit(id,name,grade,school)
+  editStudentSubmit(id,name)
   {
-this.props.updateStudent({id:id,name:name,grade:grade,school:school});
+this.props.updateStudent({id:id,name:name});
   }
   render() {
     return (
@@ -41,11 +42,11 @@ this.props.updateStudent({id:id,name:name,grade:grade,school:school});
       <div className="row mt-3"><div className="col-lg-12">
       <div className="card">
   <div className="card-header">
-    Student Registry
+    Hot Dogs list
   </div>
   <div className="card-body">
   <table className="table table-hover">
-          <thead className="thead-dark"><tr><th>Name</th><th>Grade</th><th>School</th><th>Edit/Save</th><th>Delete</th></tr></thead>
+          <thead className="thead-dark"><tr><th>Name</th><th>Edit/Save</th><th>Delete</th></tr></thead>
           <StudentList deleteStudent={this.deleteStudent} studentList={this.props.studentList} editStudentSubmit={this.editStudentSubmit}/>
         </table>
         <button className="btn btn-dark pull-left" onClick={this.addNewStudent}>Add New</button>
