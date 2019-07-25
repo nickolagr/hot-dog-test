@@ -42,11 +42,11 @@ this.props.updateStudent({id:id,name:name});
       <div className="row mt-3"><div className="col-lg-12">
       <div className="card">
   <div className="card-header">
-    Hot Dogs list
+    Hot Dogs CRUD Application
   </div>
   <div className="card-body">
   <table className="table table-hover">
-          <thead><tr><th>Number of Hot Dog</th><th>Edit/Save</th><th>Delete</th></tr></thead>
+          <thead><tr><th>List of Hot Dogs</th><th>Edit/Save</th><th>Delete</th></tr></thead>
           <StudentList deleteStudent={this.deleteStudent} studentList={this.props.studentList} editStudentSubmit={this.editStudentSubmit}/>
         </table>
         <button className="btn pull-left" onClick={this.addNewStudent}>Add New</button>
