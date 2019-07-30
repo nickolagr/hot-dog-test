@@ -6,7 +6,7 @@
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-redux": "^5.1.1",
-    "react-scripts": "2.1.1",
+    "react-scripts": "^2.1.1",
     "redux": "^4.0.4"
   },
   "scripts": {
@@ -23,5 +23,19 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickolagr/hot-dog-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nickolagr/hot-dog-test/issues"
+  },
+  "homepage": "https://github.com/nickolagr/hot-dog-test#readme"
 }
