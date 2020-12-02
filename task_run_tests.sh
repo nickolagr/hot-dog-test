@@ -1,5 +1,2 @@
 #!/bin/sh
-
-npm install
-npm start
-npm test
+sudo apt update && sudo apt install npm
