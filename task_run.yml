@@ -9,4 +9,4 @@ inputs:
   - name: resource-tutorial
   
 run:
-  path: task_run_tests.sh
+  path: resource-tutorial/task_run_tests.sh
